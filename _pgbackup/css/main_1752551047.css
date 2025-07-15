@@ -2,12 +2,12 @@
 
 :root {
     /* colors */
-    --backcolor: #101010;
+    --backcolor: #12181c;
     --fontcolor: #eeeae1;
-    --btncolor: #5383a4;
-    --fadecolor: #596687;
+    --btncolor: #00FFFF;
+    --fadecolor: #238888;
     --ccolor: linear-gradient(221deg, #212121 28%, #00c1c1 100%);
-    --box1color: #1667ca;
+    --box1color: #6616ca;
     --box1image: linear-gradient(235deg, #6616ca 0%, #f804e9 100%);
     --box2color: #118ff6;
     --box2image: linear-gradient(235deg, #118ff6 0%, #01c1ff 100%);
@@ -35,21 +35,16 @@
 }
 
 ::-webkit-scrollbar {
-    width: 6px ;
+    width: 12px ;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-        to bottom,
-        rgba(16, 16, 16, 0) 0%,          /* transparent backcolor at top */
-        rgba(83, 131, 164, 0.8) 50%,     /* solid btncolor in center */
-        rgba(16, 16, 16, 0) 100%         /* transparent backcolor at bottom */
-    );
+    background: linear-gradient(var(--btncolor),var(--btncolor));
     border-radius: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--backcolor);
+    background: var(--backcolor);
 }
 
 * {
@@ -60,11 +55,6 @@
 
 html {
     scroll-behavior: smooth;
-}
-
-html,
-body {
-    overflow-x: hidden;
 }
 
 body {
@@ -97,9 +87,9 @@ nav {
 }
 
 nav.sticky {
+    background: var(--backcolor);
     padding: 19px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-    background: var(--backcolor);
 }
 
 nav .logo {
@@ -163,7 +153,7 @@ nav .navigation li a:hover {
 .banner .content h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 3em;
-    color: var(--fontcolor);
+    color: var(--titletext);
     margin: 0;
     letter-spacing: 2px;
     font-weight: lighter;
@@ -565,7 +555,7 @@ nav .navigation li a:hover {
 }
 
 .contact .contactForm .row100 input,
-.contact .contactForm .row100 textarea {
+.contact .contactForm .row100 textarea {
     position: relative;
     border: none;
     border-bottom: 1px solid var(--btncolor);
@@ -585,7 +575,7 @@ nav .navigation li a:hover {
 }
 
 .contact .contactForm .row100 input::placeholder,
-.contact .contactForm .row100 textarea::placeholder {
+.contact .contactForm .row100 textarea::placeholder {
     color: var(--fontcolor);
 }
 

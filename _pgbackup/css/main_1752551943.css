@@ -39,12 +39,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(
-        to bottom,
-        rgba(16, 16, 16, 0) 0%,          /* transparent backcolor at top */
-        rgba(83, 131, 164, 0.8) 50%,     /* solid btncolor in center */
-        rgba(16, 16, 16, 0) 100%         /* transparent backcolor at bottom */
-    );
+    background: linear-gradient(var(--backcolor),var(--btncolor));
     border-radius: 8px;
 }
 
