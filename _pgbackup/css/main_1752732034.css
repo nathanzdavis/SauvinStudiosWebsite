@@ -285,33 +285,6 @@ nav .navigation li a:hover {
     text-align: center;
 }
 
-.about {
-    display: flex;
-    justify-content: center;
-
-    /* Centers horizontally */
-    text-align: center;
-
-    /* Centers text inside */
-    padding: 40px 20px;
-
-    /* Some breathing space */
-}
-
-.about .row {
-    max-width: 8000px;
-
-    /* Restrict content width for nice layout */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    /* Stack text + image vertically */
-    align-items: center;
-
-    /* Center items inside */
-}
-
 .title-text span {
     color: var(--btncolor);
 }

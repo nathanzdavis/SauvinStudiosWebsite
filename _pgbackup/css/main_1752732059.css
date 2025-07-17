@@ -299,7 +299,7 @@ nav .navigation li a:hover {
 }
 
 .about .row {
-    max-width: 8000px;
+    max-width: 1000px;
 
     /* Restrict content width for nice layout */
     width: 100%;

@@ -16,9 +16,9 @@
 
     /* --------- */
     /* fonts */
-    --h2font: 'Abel', sans-serif;
-    --pfont: 'Abel', sans-serif;
-    --logofont: 'Abel', sans-serif;
+    --h2font: 'Open Sans', sans-serif;
+    --pfont: 'Open Sans', sans-serif;
+    --logofont: 'Open Sans', sans-serif;
     --navfont: 'Abel', sans-serif;
     --titletext: 'Abel', sans-serif;
 
@@ -274,42 +274,6 @@ nav .navigation li a:hover {
     color: var(--fontcolor);
     font-size: 1.60em;
     letter-spacing: 1.75px;
-    text-align: left;
-}
-
-.about-title {
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    gap: 10px;
-    text-align: center;
-}
-
-.about {
-    display: flex;
-    justify-content: center;
-
-    /* Centers horizontally */
-    text-align: center;
-
-    /* Centers text inside */
-    padding: 40px 20px;
-
-    /* Some breathing space */
-}
-
-.about .row {
-    max-width: 8000px;
-
-    /* Restrict content width for nice layout */
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    /* Stack text + image vertically */
-    align-items: center;
-
-    /* Center items inside */
 }
 
 .title-text span {
