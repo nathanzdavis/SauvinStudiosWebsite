@@ -179,7 +179,7 @@ Our debut title, Bingus: REQUIEM, has a playable demo available now.</p>
                     </div>                     
                     <div class="row100"> 
                         <div class="inputBox100"> 
-                            <textarea name="messages" placeholder="Message" style="font-family: var(--h2font);"></textarea> 
+                            <textarea name="message" placeholder="Message" style="font-family: var(--h2font);"></textarea> 
                         </div>                         
                     </div>                     
                     <div class="row100"> 
@@ -230,26 +230,26 @@ Our debut title, Bingus: REQUIEM, has a playable demo available now.</p>
         }
     </script>
 <script>
-document.querySelector("form").addEventListener("submit", async function (e) {
-  e.preventDefault();
+    document.querySelector("form").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-  const fullname = this.fullname.value;
-  const email = this.email.value;
-  const message = this.message.value;
+    const fullname = this.fullname.value;
+    const email = this.email.value;
+    const message = this.message.value;
 
-  const response = await fetch('/api/send-message', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({ fullname, email, message })
-  });
+    const response = await fetch('/api/send-message', {
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ fullname, email, message })
+    });
 
-  if (response.ok) {
-    alert("Message sent successfully!");
-    this.reset();
-  } else {
-    alert("Failed to send message.");
-  }
-});
+    if (response.ok) {
+        alert("Message sent successfully!");
+        this.reset();
+    } else {
+        alert("Failed to send message.");
+    }
+    });
 </script>
