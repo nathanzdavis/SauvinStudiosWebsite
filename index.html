@@ -13,18 +13,23 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap">
     </head>     
     <body> 
-        <nav><a href="" style="display: block; text-align: center; font-family: 'sabon'; text-decoration: none; font-style: normal; font-weight: normal; font-size: 24px; color: var(--fontcolor);" target="_top">
+        <nav>
+            <a href="" style="display: block; text-align: center; font-family: 'sabon'; text-decoration: none; font-style: normal; font-weight: normal; font-size: 24px; color: var(--fontcolor);" target="_top">
    SAUVIN<br>STUDIOS</a>
             <div class="menuToggle" onclick="toggleMenu()">
 </div>             
             <ul class="navigation"> 
-                <li class=""><a href="#banner" onclick="toggleMenu()" class="">Home</a>
+                <li class="">
+                    <a href="#banner" onclick="toggleMenu()" class="">Home</a>
                 </li>                 
-                <li class=""><a href="#about" onclick="toggleMenu()">About</a>
+                <li class="">
+                    <a href="#about" onclick="toggleMenu()">About</a>
                 </li>                 
-                <li class=""><a href="#games" onclick="toggleMenu()">Games</a>
+                <li class="">
+                    <a href="#games" onclick="toggleMenu()">Games</a>
                 </li>                 
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a>
+                <li>
+                    <a href="#contact" onclick="toggleMenu()">Contact</a>
                 </li>                 
             </ul>             
         </nav>
@@ -163,7 +168,7 @@ Our debut title, Bingus: REQUIEM, has a playable demo available now.</p>
                 <p style="font-family: var(--titletext);">Interested in Publishing? Contact us for our pitch deck or to inquire further.</p> 
             </div>             
             <div class="contactForm"> 
-                <form action="/api/send-message" method="POST">
+                <form action="/api/send_message" method="POST">
                     <div class="row100"> 
                         <div class="inputBox50"> 
                             <input type="text" name="fullname" placeholder="Full Name" style="font-family: var(--h2font);"> 
@@ -185,14 +190,16 @@ Our debut title, Bingus: REQUIEM, has a playable demo available now.</p>
                 </form>                 
             </div>             
             <div class="social"> 
-                <li><a href="https://www.linkedin.com/in/smruti-ranjan-nayak/"><img src="media/icon/linkedin.png" alt=""></a>
-                </li>                 
-                <li><a href="https://www.instagram.com/sm8uti/"><img src="media/icon/instagram.png" alt=""></a>
-                </li>                 
-                <li><a href="#"><img src="media/icon/facebook.png" alt=""></a>
-                </li>
                 <li>
-                    <a href="https://www.youtube.com/@SauvinStudios" target="_blank" rel="noopener noreferrer"> <img src="media/icon/youtube.png" alt=""> </a>
+                    <a href="https://www.linkedin.com/in/smruti-ranjan-nayak/"><img src="media/icon/linkedin.png" alt=""></a>
+                </li>                 
+                <li>
+                    <a href="https://www.instagram.com/sm8uti/"><img src="media/icon/instagram.png" alt=""></a>
+                </li>                 
+                <li>
+                    <a href="#"><img src="media/icon/facebook.png" alt=""></a>
+                </li>
+                <li><a href="https://www.youtube.com/@SauvinStudios" target="_blank" rel="noopener noreferrer"> <img src="media/icon/youtube.png" alt=""> </a>
                 </li>                 
             </div>             
         </div>
