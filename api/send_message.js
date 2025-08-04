@@ -37,7 +37,7 @@ export default async function handler(req, res) {
       from: `"${fullname}" <${process.env.SMTP_EMAIL}>`,
       to: process.env.SMTP_EMAIL,
       replyTo: email,
-      subject: 'New Contact Form Message',
+      subject: `NEW form submission from ${fullname}: ${email}`,
       html: `
         <p><strong>Name:</strong> ${fullname}</p>
         <p><strong>Email:</strong> ${email}</p>
