@@ -24,11 +24,12 @@ export default async function handler(req, res) {
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: parseInt(process.env.SMTP_PORT, 10),
-    secure: process.env.SMTP_PORT === '465', // true for port 465, false for others
+    secure: true,
     auth: {
-      user: process.env.SMTP_EMAIL,
-      pass: process.env.SMTP_PASSWORD,
+      user: 'ndavis@sauvinstudios.com',
+      pass: process.env.SMTP_PASSWORD, // Use app password for ndavis
     },
+    authMethod: 'LOGIN',
   });
 
   try {
