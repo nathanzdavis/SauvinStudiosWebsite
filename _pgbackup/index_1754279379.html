@@ -13,57 +13,40 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap">
     </head>     
     <body> 
-        <nav>
-            <a href="" style="display: block; text-align: center; font-family: 'sabon'; text-decoration: none; font-style: normal; font-weight: normal; font-size: 24px; color: var(--fontcolor);" target="_top">
+        <nav><a href="" style="display: block; text-align: center; font-family: 'sabon'; text-decoration: none; font-style: normal; font-weight: normal; font-size: 24px; color: var(--fontcolor);" target="_top">
    SAUVIN<br>STUDIOS</a>
             <div class="menuToggle" onclick="toggleMenu()">
 </div>             
             <ul class="navigation"> 
-                <li class="">
-                    <a href="#banner" onclick="toggleMenu()" class="">Home</a>
+                <li class=""><a href="#banner" onclick="toggleMenu()" class="">Home</a>
                 </li>                 
-                <li class="">
-                    <a href="#about" onclick="toggleMenu()">About</a>
+                <li class=""><a href="#about" onclick="toggleMenu()">About</a>
                 </li>                 
-                <li class="">
-                    <a href="#games" onclick="toggleMenu()">Games</a>
+                <li class=""><a href="#games" onclick="toggleMenu()">Games</a>
                 </li>                 
-                <li>
-                    <a href="#contact" onclick="toggleMenu()">Contact</a>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a>
                 </li>                 
             </ul>             
         </nav>
-        <section class="banner" id="banner" style="width: 100%; background-color: black; padding-bottom: 0px; resize: none; margin-bottom: 50px;">
-            <div class="content" style="text-align: center;">
-                <!-- Text and shadow container -->
-                <div style="position: relative; margin-top: 0; margin-bottom: 0;">
-                    <!-- Shadow image behind the text -->
-                    <img src="media/Shadow.png" style="position: absolute; 
-                  top: 50%; 
-                  left: 50%; 
-                  transform: translate(-50%, -50%) scale(3, 3); 
-                  z-index: 1; 
-                  opacity: 0.9; 
-                  max-width: 100%; 
-                  height: auto;">
-                    <!-- Heading text above the image -->
-                    <h2 style="position: relative; z-index: 2; font-size: 2.25em; color: white; margin: 0;">
-        An Enthusiastic Team <br> Ready To Develop The Next Big Thing </h2>
+        <section class="banner" id="banner"> 
+            <div class="content"> 
+                <div style="position: relative; text-align: center; display: inline-block;">
+                    <h2 style="position: relative; z-index: 2; font-size: 3em; color: white; margin-top: 297px; margin-bottom: 74px;">
+                        An Enthusiastic Team <br> Ready To Develop The Next Big Thing                      <img src="media/Shadow.png" style="position: absolute; top: 50%; left: 50%; z-index: 1; opacity: .9; max-width: 100%; height: auto; transform: translate(-50%, -50%) scale(3, 3);"></h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/peFQmax7bOc?si=DSMf7AzJjw0n4adi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-                <div class="video-wrapper" style="margin-top: 64px;">
-                    <iframe src="https://www.youtube.com/embed/peFQmax7bOc?si=jDnmk5pHux57lBDE" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
-                </div>
-        </section>
+            </div>             
+        </section>         
         <!-- about -->
         <section class="about" id="about">
             <div class="row" data-aos="zoom-out-down">
                 <div class="col50">
-                    <div class="about-title" style="max-width: 90%; margin: 0 auto 15px; text-align: justify;">
+                    <div class="about-title">
                         <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="loop" colors="primary:#00ffff,secondary:#ffffff" stroke="66" style="width:50px;height:50px;">
 </lord-icon>
                         <h2 class="title-text">About <span>Us</span></h2>
                     </div>
-                    <p style="font-size: 22px; max-width: 90%; margin: 0 auto; text-align: justify;">Sauvin Studios is a five-person indie team based in Spokane, Washington, driven by a shared passion for bold ideas and unforgettable experiences. We come from diverse creative backgrounds&mdash;art, music, storytelling, and code&mdash;united by the belief that great games are built on craft, originality, and heart.
+                    <p style="font-size: 22px;">Sauvin Studios is a five-person indie team based in Spokane, Washington, driven by a shared passion for bold ideas and unforgettable experiences. We come from diverse creative backgrounds&mdash;art, music, storytelling, and code&mdash;united by the belief that great games are built on craft, originality, and heart.
 Our mission is to create emotionally resonant games that stand out across genres. Whether it&rsquo;s a grimdark metroidvania, a satirical real-time strategy game, or a cozy life sim, each of our projects aims to push narrative, design, and atmosphere in meaningful ways.
 At Sauvin Studios, we&rsquo;re building a long-term creative space where artistic risks are embraced, ideas are nurtured, and every game is made with intention.
 Our debut title, Bingus: REQUIEM, has a playable demo available now.</p>
@@ -202,16 +185,14 @@ Our debut title, Bingus: REQUIEM, has a playable demo available now.</p>
                 </form>                 
             </div>             
             <div class="social"> 
-                <li>
-                    <a href="https://www.linkedin.com/in/smruti-ranjan-nayak/"><img src="media/icon/linkedin.png" alt=""></a>
+                <li><a href="https://www.linkedin.com/in/smruti-ranjan-nayak/"><img src="media/icon/linkedin.png" alt=""></a>
                 </li>                 
-                <li>
-                    <a href="https://www.instagram.com/sm8uti/"><img src="media/icon/instagram.png" alt=""></a>
+                <li><a href="https://www.instagram.com/sm8uti/"><img src="media/icon/instagram.png" alt=""></a>
                 </li>                 
-                <li>
-                    <a href="#"><img src="media/icon/facebook.png" alt=""></a>
+                <li><a href="#"><img src="media/icon/facebook.png" alt=""></a>
                 </li>
-                <li><a href="https://www.youtube.com/@SauvinStudios" target="_blank" rel="noopener noreferrer"> <img src="media/icon/youtube.png" alt=""> </a>
+                <li>
+                    <a href="https://www.youtube.com/@SauvinStudios" target="_blank" rel="noopener noreferrer"> <img src="media/icon/youtube.png" alt=""> </a>
                 </li>                 
             </div>             
         </div>
